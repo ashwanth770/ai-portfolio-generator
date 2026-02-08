@@ -4,7 +4,7 @@ import base64
 from utils import zip_html_file, generate_portfolio_html
 
 st.set_page_config(page_title="Generate Portfolio", layout="centered")
-st.title("🚀 Generate Website")
+st.title("🚀 Generate Portfolio Website")
 
 if "user_data" not in st.session_state:
     st.warning("Please fill out your details first on the Create page.")
@@ -94,4 +94,4 @@ if "final_html" in st.session_state:
 if st.button("🔁 Generate Again"):
     del st.session_state["final_html"]
     st.rerun()
-
+    
